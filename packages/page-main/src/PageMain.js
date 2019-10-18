@@ -39,17 +39,7 @@ export class PageMain extends LitElement {
 
   render() {
     return html`
-      ${this.logo}
-      <h1>${this.title}</h1>
-      <p>Edit <code>src/MyApp.js</code> and save to reload.</p>
-      <a
-        class="app-link"
-        href="https://open-wc.org/developing/#examples"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Code examples
-      </a>
+      <section style="display: flex"><article><h1>One Name Study</h1></article></section>
     `;
   }
 }

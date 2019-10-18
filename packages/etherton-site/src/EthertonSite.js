@@ -53,12 +53,12 @@ export class EthertonSite extends LitElement {
         <ul>
           <li>
             <a href="#main" class=${this.__addActiveIf('main')} @click=${this.__clickPageLink}
-              >Main</a
+              >Home</a
             >
           </li>
           <li>
             <a href="#pageOne" class=${this.__addActiveIf('pageOne')} @click=${this.__clickPageLink}
-              >Page One</a
+              >ONS</a
             >
           </li>
           <li>
@@ -98,7 +98,6 @@ export class EthertonSite extends LitElement {
         header {
           width: 100%;
           background: #fff;
-          border-bottom: 1px solid #ccc;
         }
 
         header ul {
@@ -116,7 +115,7 @@ export class EthertonSite extends LitElement {
         header ul li a {
           color: #ccc;
           text-decoration: none;
-          font-size: 18px;
+          font-size: 13px;
           line-height: 36px;
         }
 

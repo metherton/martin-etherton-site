@@ -31,4 +31,20 @@ describe('EthertonSite', () => {
 
     expect(el.page).to.equal('about');
   });
+
+  it('should have a menu option to Home', async () => {
+    const el = await fixture(html`
+      <etherton-site></martinetherton-site>
+    `);
+    const menuOption = (el.shadowRoot.querySelectorAll('header ul li a'))[0].innerText;
+    expect(menuOption).to.equal('Home');
+  });
+
+  it('should have a menu option to One Name Study', async () => {
+    const el = await fixture(html`
+      <etherton-site></martinetherton-site>
+    `);
+    const menuOption = (el.shadowRoot.querySelectorAll('header ul li a'))[1].innerText;
+    expect(menuOption).to.equal('ONS');
+  });
 });
